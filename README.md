@@ -1,39 +1,34 @@
 # atilasos.github.io
 
-Site pessoal de Igor Almeida, professor de TIC no 1.º ciclo, dedicado a projetos de tecnologia educativa, pedagogias ativas, pensamento computacional, Minecraft Education, robótica educativa e inteligência artificial responsável na educação.
+Personal site of Igor Almeida — ICT teacher in primary school, Funchal, Madeira.
 
-## Estrutura
+Live: https://atilasos.github.io
 
-- `index.html` — página inicial
-- `projetos.html` — projetos selecionados
-- `percurso.html` — percurso profissional e académico
-- `formacao.html` — formação contínua selecionada
-- `recursos.html` — recursos e experiências
-- `contacto.html` — ligações e contacto
-- `assets/css/style.css` — estilos partilhados
+## Structure
 
-## Como editar
+- `index.html`, `projetos.html`, `percurso.html`, `formacao.html`, `contacto.html` — pt-PT pages (default).
+- `en/index.html`, `en/projects.html`, `en/journey.html`, `en/training.html`, `en/contact.html` — English mirror.
+- `assets/css/style.css` — single shared stylesheet (dark theme).
+- `assets/fonts/` — self-hosted Inter and JetBrains Mono (woff2).
 
-O site é estático e não usa build system. Para alterar conteúdo, edite diretamente os ficheiros HTML. Para alterar cores, espaçamentos ou grelhas, edite `assets/css/style.css`.
+## Editing
 
-## Como pré-visualizar
+- All pages are static HTML. Edit directly. No build step.
+- The header (with PT|EN toggle) is repeated in each file. When changing it, update all 10 pages.
+- Each page declares `<link rel="alternate" hreflang="…">` to its sibling in the other language.
+
+## Local preview
 
 ```bash
+cd atilasos.github.io
 python3 -m http.server 8000
+# open http://localhost:8000/
 ```
 
-Depois abra `http://localhost:8000` no navegador.
+## Deployment
 
-## Publicação
+Pushed to `main` → published by GitHub Pages at the repository's configured URL.
 
-Este repositório é publicado automaticamente pelo GitHub Pages quando está em `main` no repositório público `atilasos.github.io`.
+## Privacy
 
-Se não publicar automaticamente, verificar em GitHub:
-
-```txt
-Settings → Pages → Build and deployment → Source: Deploy from a branch → main / root
-```
-
-## Privacidade
-
-Este repositório não deve incluir documentos pessoais, certificados integrais, dados identificáveis de estudantes, números fiscais, documentos de identificação civil, endereços residenciais ou chaves completas de validação.
+This repository does not include personal documents, full certificates, identifiable student data, tax/ID numbers, home addresses, or complete validation keys.
