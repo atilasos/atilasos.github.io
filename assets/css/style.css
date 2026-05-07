@@ -190,6 +190,16 @@ h1 {
   letter-spacing: -0.022em;
   margin: 0.6rem 0 1.2rem;
 }
+/* Heading quieter: H1 esbatido, escala intermédia, ar generoso. */
+h1.h-quiet,
+h2.h-quiet {
+  font-size: clamp(2rem, 4.4vw, 3.2rem);
+  line-height: 1.08;
+  letter-spacing: -0.022em;
+  color: color-mix(in oklab, var(--text-muted), var(--text) 35%);
+  max-width: 22ch;
+  text-wrap: balance;
+}
 h2 {
   font-size: clamp(1.6rem, 3.2vw, 2.4rem);
   line-height: 1.15;
